@@ -2,12 +2,12 @@ const express = require("express");
 
 const app = express();
 
-var user = {name: 'Дима'};
+var user = {name: 'Дмитрий'};
 
 app.get("/text", function(request, response) {
-    response.send("<h1>Привет, это я!<h1>");
+    response.send("<h1>Привет, это я работаю!<h1>");
 });
-
+git 
 app.get("/json", function(request, response) {
     response.send("<h1>" + JSON.stringify(user) + "</h1>");
 });
